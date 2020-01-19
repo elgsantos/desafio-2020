@@ -1,0 +1,17 @@
+{
+  "name": "desafio",
+  "version": "1.0.0",
+  "description": "Aplicações do desafio :)",
+  "main": "app.js",
+  "scripts": {
+    "1": "node ./decode-url.js",
+    "3": "node ./intervalo-numeros.js",
+    "4": "node ./troco.js"
+  },
+  "author": "Eduardo Gomes",
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^7.0.3",
+    "parse-url": "^5.0.1"
+  }
+}
