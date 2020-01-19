@@ -20,6 +20,7 @@ ambos devem mostrar um número de versão.
 
 ## Instalação de dependências
 No prompt de comando do seu sistema, navegue até a pasta que contém o package.json e utilize o npm para instalar as dependências.
+
 `npm install`
 
 ## Utilização
@@ -73,3 +74,8 @@ No prompt de comando do seu sistema, navegue até a pasta que contém o package.
 `1. Valor a ser pago: 20,00`
 
 `2. Valor efetivamente pago: 40,00`
+
+### 5.2 - API GET
+Acesse o repositório abaixo:
+
+[https://github.com/elgsantos/random-profile](https://github.com/elgsantos/random-profile)
