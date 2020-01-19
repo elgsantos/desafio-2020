@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "1": "node ./decode-url.js",
+    "2": "node ./happy-number.js",
     "3": "node ./intervalo-numeros.js",
     "4": "node ./troco.js"
   },
