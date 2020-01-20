@@ -75,7 +75,54 @@ No prompt de comando do seu sistema, navegue até a pasta que contém o package.
 
 `2. Valor efetivamente pago: 40,00`
 
+## 5.1 - Serviço de integração
+O serviço deverá possuir 2 endpoints: um GET, para retornar um perfil aleatório; e um POST, para cadastrar um novo perfil.
+
+### GET
+O serviço deve possuir um endpoint para permitir uma requisição get, que retorna dados gerais de um perfil aleatório. 
+
+A requisição deve receber os seguintes parâmetros:
+
+`paises`
+
+`idadeInicial`
+
+`idadeFinal`
+
+#### Validações
+* Deverá ser validado se a request recebeu o parâmetro `paises`, e caso não tenha recebido, seja informado ao usuário. 
+* Caso fornecido, deverá ser validado o parâmetro `idadeInicial`, um número **inteiro** no intervalo de 0 a 100
+* Caso fornecido, deverá ser validado o parâmetro `idadeFinal`, um número **inteiro** no intervalo de 0 a 100
+
+### POST
+O serviço deve possuir um enpoint que permita salvar um novo usuário, com seu devido modelo  estrutural. 
+
+Os campos enviados na requisição deverão ser os campos descritos na página da [API](https://randomprofile.com/pckgs/11-general/). Caso sejam utilizados nomes diferentes da API random profile, deverá ter estrutura equivalente. 
+
+#### Validações
+Deverão ser validados os campos descritos na página da [API](https://randomprofile.com/pckgs/11-general/). 
+
+As validações incluem: formato, tipo, tamanho e valor dos atributos.
+
+### Retry
+Retentativa após um tempo estabelecido, para lidar com algum problemas de DNS ou outros da API acessada por esta. 
+
+### Timeout
+O timeout da aplicação deve ser configurável. 
+
+### Tratamento de erros
+Devem ser retornadas ao usuário mensagens específicas para exceções conhecidas. Como nos exemplos abaixo:
+
+* Caso alguma validação falhe. 
+* Caso a request resulte em timeout. 
+* Caso resulte em erro de conexão ao serviço.
+
+Também deverá ser tratado globalmente erros desconhecidos, de modo a não parar a aplicação
+
 ### 5.2 - API GET
-Acesse o repositório abaixo:
+Acesse o repositório abaixo para acessar a API e sua documentação:
 
 [https://github.com/elgsantos/random-profile](https://github.com/elgsantos/random-profile)
+
+## Autor
+* **Eduardo Gomes** - [elgsantos](https://github.com/elgsantos/)
